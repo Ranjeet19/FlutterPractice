@@ -1,0 +1,35 @@
+<Code>
+
+void main() {
+  final restaurants = [
+    {
+      'name': 'Pizza Mario',
+      'cuisine': 'Italian',
+      'ratings': [4.0, 3.5, 4.5],
+    },
+    {
+      'name': 'Chez Anne',
+      'cuisine': 'French',
+      'ratings': [5.0, 4.5, 4.0],
+    },
+    {
+      'name': 'Navaratna',
+      'cuisine': 'Indian',
+      'ratings': [4.0, 4.5, 4.0],
+    },
+  ];
+  
+  
+  final rate = restaurants[0]['ratings'] as List;
+  
+  double total = 0;
+  
+  for(final n in rate){
+    total += n as double;
+    
+    final avg = total/ rate.length;
+    print ('the avg is $avg');
+  }
+}
+
+</Code>
